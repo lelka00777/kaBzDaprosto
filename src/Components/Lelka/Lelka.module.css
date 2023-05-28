@@ -1,0 +1,36 @@
+/* .App {
+  padding: 30px;
+  display: flex;
+}
+
+
+.App > div {
+  margin-right: 50px;
+} */
+
+/* .Star{
+ color: aquamarine;
+} */
+
+body{
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  color:white;
+}
+
+.selected{
+  font-size: 26px;
+  content: "★★★★★";
+  color: rgb(255, 204, 0);
+  cursor: pointer;
+ 
+  
+}
+.noselected{
+  font-size: 26px;
+
+  color: rgb(38, 36, 36);
+  cursor: pointer;
+}
