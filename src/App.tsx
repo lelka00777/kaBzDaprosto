@@ -26,10 +26,10 @@ function App() {
   //   console.log("hello");
   // };
 
-  // const base = [5, 5, 5];
+  const base = [5, 5, 5];
   return (
     <div className="App">
-      dsfdsf
+     
       {/* <Todoolist title="Learn1" task={task1} />
       <Todoolist title="Movi" task={task2} />
       <Todoolist title="Work" task={task3} />  */}
@@ -72,33 +72,33 @@ function App() {
 
      
 
-{/*      
-    <Ratting value={0} />
+     
+    {/* <Ratting value={0} />
       <Ratting value={1} />
       <Ratting value={2} />
       <Ratting value={3} />
       <Ratting value={4} />
-      <Ratting value={5} />
+      <Ratting value={5} /> */}
 
       <Accordion titleValue={"Cat"} colapsed={true} table={base} />
-      <Accordion titleValue={"Menu"} colapsed={true} table={base} /> */}
+      <Accordion titleValue={"Menu"} colapsed={true} table={base} />
 
     </div>
   );
 }
 
-type PropsTypePegetitle = {
-  title: string;
-};
-function Pegetitle(props: PropsTypePegetitle) {
-  console.log("Pegetitle =>AppTitle render");
-  return (
-    <>
-      {" "}
-      {props.title}
-      <br></br>{" "}
-    </>
-  );
-}
+// type PropsTypePegetitle = {
+//   title: string;
+// };
+// function Pegetitle(props: PropsTypePegetitle) {
+//   console.log("Pegetitle =>AppTitle render");
+//   return (
+//     <>
+//       {" "}
+//       {props.title}
+//       <br></br>{" "}
+//     </>
+//   );
+// }
 
 export default App;

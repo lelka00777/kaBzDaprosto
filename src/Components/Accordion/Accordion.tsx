@@ -2,25 +2,35 @@ export type PropsTypeAccordion = {
   titleValue: string;
   colapsed: boolean;
   table: number[];
-  
 };
 
 export function Accordion(props: PropsTypeAccordion) {
+  return props.colapsed === true ? 
+    <div>
+      <AcordionTitle title={props.titleValue} />
+      <AcordionBody titles={props.table} />
+    </div>
+  : 
+    <div>
+      <AcordionTitle title={props.titleValue} />
+    </div>
+ 
 
-  if (props.colapsed === true) {
-    return (
-      <div>
-        <AcordionTitle title={props.titleValue} />
-        <AcordionBody titles={props.table} />
-      </div>
-    );
-  } else {
-    return (
-      <div>
-        <AcordionTitle title={props.titleValue} />
-      </div>
-    );
-  }
+  //   if (props.colapsed === true) {
+  //     return (
+  //       <div>
+  //         <AcordionTitle title={props.titleValue} />
+  //         <AcordionBody titles={props.table} />
+  //       </div>
+  //     );
+  //   } else {
+  //     return (
+  //       <div>
+  //         <AcordionTitle title={props.titleValue} />
+  //       </div>
+  //     );
+  //   }
+  //
 }
 
 type PropsTypeAcordionTitle = {
@@ -43,7 +53,5 @@ function AcordionBody(props: PropsTypeAccordionBody) {
     </ul>
   );
 
-  //     }
-  //      else {
-  //       <h3>{props.title}</h3>
+
 }
